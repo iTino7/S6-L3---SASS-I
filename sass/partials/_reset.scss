@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+$bg-main: #faedcd;
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  background-color: $bg-main;
+}

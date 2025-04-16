@@ -1,0 +1,22 @@
+@import "./partials/reset";
+@import "./partials/font";
+@import "./partials/button";
+@import "./partials/animations";
+@import "./partials/mixins";
+@import "./partials/spacing";
+
+header {
+  .containerNav {
+    display: flex;
+    align-items: center;
+  }
+  .link {
+    margin-left: auto;
+    margin-right: 20px;
+
+    a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  background-color: #faedcd;
+}
+
+header .containerNav {
+  display: flex;
+  align-items: center;
+}
+header .link {
+  margin-left: auto;
+  margin-right: 20px;
+}
+header .link a {
+  margin-right: 10px;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
