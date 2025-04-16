@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 *,
 *::before,
 *::after {
@@ -8,18 +8,89 @@
 body {
   margin: 0;
   line-height: 1.4;
-  background-color: #faedcd;
+  background-color: #111111;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 header .containerNav {
   display: flex;
   align-items: center;
+  background-color: #ff5f00;
+  padding: 10px 8px;
 }
 header .link {
   margin-left: auto;
   margin-right: 20px;
+  cursor: pointer;
 }
 header .link a {
   margin-right: 10px;
   text-decoration: none;
+  font-size: 20px;
+  color: #f5f5f5;
+}
+header .link a:hover {
+  color: #111111;
+  transition: 1s;
+}
+
+.hero {
+  background-color: #f5f5f5;
+  display: flex;
+}
+.hero .containerHero {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .containerHero h1 {
+  margin: 0;
+  text-align: center;
+  animation: slideBottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.hero .containerHero span {
+  font-size: 24px;
+}
+.hero .containerHero .animation1 {
+  animation: slideBottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.hero .containerHero .animation2 {
+  animation: slideBottom 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.hero .containerHero .animation3 {
+  animation: slideBottom 2.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.hero .containerHero .containerButtonHero {
+  display: flex;
+}
+.hero .containerHero .containerButtonHero button {
+  border: none;
+  background-color: #3cb043;
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #f5f5f5;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.hero .containerHero .containerButtonHero button:hover {
+  background-color: #ff5f00;
+  transition: 1s;
+}
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.hero .imgHero {
+  display: flex;
+}
+.hero .imgHero img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -4,19 +4,105 @@
 @import "./partials/animations";
 @import "./partials/mixins";
 @import "./partials/spacing";
+@import "./partials/color";
 
+body {
+  margin: 0;
+  line-height: 1.4;
+  background-color: $colorDarkGray;
+  font-family: $main-font;
+}
+// NAVBAR
 header {
   .containerNav {
     display: flex;
     align-items: center;
+    background-color: $colorNikeOrange;
+    padding: 10px 8px;
   }
   .link {
     margin-left: auto;
     margin-right: 20px;
+    cursor: pointer;
 
     a {
       margin-right: 10px;
       text-decoration: none;
+      font-size: $fontSizeLg;
+      color: $colorLightGray;
+
+      &:hover {
+        color: $colorDarkGray;
+        transition: 1s;
+      }
+    }
+  }
+}
+
+// HERO
+
+.hero {
+  background-color: $colorLightGray;
+  display: flex;
+  .containerHero {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin: 0;
+      text-align: center;
+      animation: slideBottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    span {
+      font-size: $fontSizeXl;
+    }
+    .animation1 {
+      animation: slideBottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    .animation2 {
+      animation: slideBottom 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+    .animation3 {
+      animation: slideBottom 2.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    .containerButtonHero {
+      display: flex;
+
+      button {
+        border: none;
+        background-color: $colorNikeGreen;
+        padding: 10px 30px;
+        border-radius: 8px;
+        color: $colorLightGray;
+        margin-right: 20px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $colorNikeOrange;
+          transition: 1s;
+        }
+      }
+    }
+  }
+
+  @keyframes slideBottom {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .imgHero {
+    display: flex;
+    img {
+      width: 100%;
     }
   }
 }
