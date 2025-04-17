@@ -1,0 +1,24 @@
+@import "./color";
+
+$button: (
+  Orange: $colorNikeOrange,
+  Dark: $colorDarkGray,
+);
+
+@each $name, $color in $button {
+  .button#{$name} {
+    background-color: $color;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: $colorLightGray;
+    margin-right: 20px;
+    cursor: pointer;
+
+    &.button#{$name}:hover {
+      transition: 1s;
+      background-color: $colorNikeGreen;
+    }
+  }
+}
+

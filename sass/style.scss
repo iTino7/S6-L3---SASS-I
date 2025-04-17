@@ -19,6 +19,9 @@ header {
     align-items: center;
     background-color: $colorNikeOrange;
     padding: 10px 8px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
   }
   .link {
     margin-left: auto;
@@ -59,32 +62,17 @@ header {
       font-size: $fontSizeXl;
     }
     .animation1 {
-      animation: slideBottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slideBottom 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
     .animation2 {
-      animation: slideBottom 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slideBottom 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
     .animation3 {
-      animation: slideBottom 2.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slideBottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
 
     .containerButtonHero {
       display: flex;
-
-      button {
-        border: none;
-        background-color: $colorNikeGreen;
-        padding: 10px 30px;
-        border-radius: 8px;
-        color: $colorLightGray;
-        margin-right: 20px;
-        cursor: pointer;
-
-        &:hover {
-          background-color: $colorNikeOrange;
-          transition: 1s;
-        }
-      }
     }
   }
 
@@ -103,6 +91,25 @@ header {
     display: flex;
     img {
       width: 100%;
+      animation: slideLeft 1.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.containerSection {
+  .section {
+    display: flex;
+    justify-content: space-around;
   }
 }
